@@ -74,6 +74,150 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+  margin-left: auto;
+}
+
+.account-menu {
+  position: relative;
+}
+
+.account-menu-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  min-width: 120px;
+  justify-content: center;
+}
+
+.account-menu-btn:hover {
+  background-color: #2980b9;
+  transform: translateY(-1px);
+}
+
+.dropdown-arrow {
+  font-size: 0.8rem;
+  transition: transform 0.3s ease;
+}
+
+.account-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  color: #333;
+  min-width: 280px;
+  max-width: 320px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  border-radius: 8px;
+  margin-top: 0.5rem;
+  z-index: 1000;
+  border: 1px solid #e1e8ed;
+  overflow: hidden;
+}
+
+.menu-section {
+  padding: 0.5rem 0;
+}
+
+.menu-header {
+  padding: 1rem 1.25rem 0.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.menu-subtitle {
+  padding: 0.5rem 1.25rem 0.25rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #7f8c8d;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.user-type-badge {
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.user-type-badge.distributor {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.user-type-badge.customer {
+  background-color: #27ae60;
+  color: white;
+}
+
+.account-dropdown-menu button {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 0.75rem 1.25rem;
+  border: none;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.9rem;
+  color: #2c3e50;
+}
+
+.account-dropdown-menu button:hover {
+  background-color: #f8f9fa;
+  color: #2c3e50;
+}
+
+.sign-in-option {
+  background-color: #3498db !important;
+  color: white !important;
+  margin: 0 0.75rem;
+  border-radius: 6px !important;
+  justify-content: center !important;
+  font-weight: 600 !important;
+}
+
+.sign-in-option:hover {
+  background-color: #2980b9 !important;
+}
+
+.guest-option {
+  color: #f39c12 !important;
+  font-weight: 600 !important;
+}
+
+.guest-option:hover {
+  background-color: #fef9e7 !important;
+  color: #d68910 !important;
+}
+
+.logout-option {
+  color: #e74c3c !important;
+  font-weight: 600 !important;
+}
+
+.logout-option:hover {
+  background-color: #fdedec !important;
+  color: #c0392b !important;
 }
 
 .cart-btn {
@@ -144,35 +288,7 @@
   margin: 0.25rem 0;
 }
 
-.auth-buttons {
-  display: flex;
-  gap: 0.5rem;
-}
 
-.auth-buttons button {
-  padding: 0.5rem 1rem;
-  border: 1px solid #3498db;
-  background: none;
-  color: #3498db;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: all 0.3s ease;
-}
-
-.auth-buttons button.primary {
-  background-color: #3498db;
-  color: white;
-}
-
-.auth-buttons button:hover {
-  background-color: #3498db;
-  color: white;
-}
-
-.auth-buttons button.primary:hover {
-  background-color: #2980b9;
-}
 
 @media (max-width: 768px) {
   .header-container {
@@ -187,6 +303,17 @@
   
   .nav-links button {
     padding: 0.25rem 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .account-dropdown-menu {
+    min-width: 260px;
+    right: -1rem;
+  }
+  
+  .account-menu-btn {
+    min-width: 100px;
+    padding: 0.6rem 1rem;
     font-size: 0.9rem;
   }
 }

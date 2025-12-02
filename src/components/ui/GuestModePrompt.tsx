@@ -43,7 +43,7 @@ const GuestModePrompt: React.FC<GuestModePromptProps> = ({
               <p>Access personalized features, order history, and special pricing for distributors</p>
               <div className="account-buttons">
                 <button onClick={onLogin} className="btn primary">
-                  Login
+                  Sign In
                 </button>
                 <button onClick={onRegister} className="btn secondary">
                   Create Account

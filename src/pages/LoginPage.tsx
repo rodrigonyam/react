@@ -37,7 +37,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ onNavigate }) => {
   return (
     <div className="auth-container">
       <div className="auth-card">
-        <h2>Login to RetailHub</h2>
+        <h2>Sign In to RetailHub</h2>
         
         <form onSubmit={handleSubmit} className="auth-form">
           <div className="form-group">
@@ -89,7 +89,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ onNavigate }) => {
           {error && <div className="error-message">{error}</div>}
 
           <button type="submit" disabled={loading} className="auth-btn primary">
-            {loading ? 'Logging in...' : 'Login'}
+            {loading ? 'Signing in...' : 'Sign In'}
           </button>
         </form>
 
